@@ -10,3 +10,60 @@
   font-weight:normal;
   font-style:normal;
 }
+@font-face{
+  font-family:'Arial Bold';
+  font-display: auto;
+  src:local('Arial Bold'), url('fonts/Arial-Bold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * SVN-Gilroy
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SVN-Gilroy SemiBold';
+  font-display: auto;
+  src:local('SVN-Gilroy SemiBold'), url('fonts/SVN-Gilroy-SemiBold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SVN-Gilroy Bold';
+  font-display: auto;
+  src:local('SVN-Gilroy Bold'), url('fonts/SVN-Gilroy-Bold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SVN-Gilroy Black';
+  font-display: auto;
+  src:local('SVN-Gilroy Black'), url('fonts/SVN-Gilroy-Black.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * SVN-Dancing
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SVN-Dancing Script Regular';
+  font-display: auto;
+  src:local('SVN-Dancing Script Regular'), url('fonts/SVN-Dancing-script.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * SFUFutura
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SFU Futura ExtraBoldOblique';
+  font-display: auto;
+  src:local('SFU Futura ExtraBoldOblique'), url('fonts/00291-SFUFuturaExtraBoldOblique.TTF') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}

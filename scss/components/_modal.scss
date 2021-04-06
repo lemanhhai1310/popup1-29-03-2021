@@ -1,0 +1,87 @@
+.modal{
+  &__dialog{
+    @include media-breakpoint-up('m'){
+      width: 975px;
+    }
+  }
+  &__title3{
+    @extend .fz-42;
+    color: #fadb62;
+    line-height: 1.2;
+    margin-bottom: 3px;
+    font-family: $font-SFUFuturaExtraBoldOblique;
+  }
+  &__title2{
+    @extend .fz-34;
+    font-family: $font-SVN-Dancing-script;
+    color: #ffffff;
+    line-height: 1;
+  }
+  &__title1{
+    @extend .fz-25;
+    font-family: $font-SVNGilroy-Bold;
+    color: #ffffff;
+    line-height: 1.33;
+    letter-spacing: 0.61px;
+    margin-bottom: 8px;
+  }
+  &__btnStart{
+    @extend .fz-22;
+    color: #000;
+    background: #fec31d;
+    font-family: $font-ArialBold;
+  }
+  &__list{
+    margin-bottom: 26px !important;
+    >li{
+      &:before{
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 0;
+        display: inline-block;
+        border-radius: 50%;
+        background: #fadb62;
+        $x: 5px;
+        width: #{$x} !important;
+        height: #{$x} !important;
+      }
+      padding-left: 15px;
+      position: relative;
+      color: #ffffff;
+      @extend .fz-17;
+      font-family: $font-SVNGilroy-SemiBold;
+    }
+  }
+}
+.hc-luckywheel{
+  $x: 500px;
+  width: #{$x} !important;
+  height: #{$x} !important;
+}
+.hc-luckywheel-btn{
+  $x: 48px;
+  width: #{$x} !important;
+  height: #{$x} !important;
+  background-color: transparent !important;
+  box-shadow: none;
+  &:after{
+    opacity: 0 !important;
+  }
+}
+.hc-luckywheel-item{
+  color: #2868fa !important;
+  &:nth-of-type(odd){
+    color: #ffffff !important;
+  }
+  p{
+    font-family: $font-SVNGilroy-Black;
+    @extend .fz-18;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 25px;
+    }
+  }
+  span{
+    width: 29%;
+  }
+}
