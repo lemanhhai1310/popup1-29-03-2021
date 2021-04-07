@@ -131,10 +131,10 @@
       html.push('<li class="hc-luckywheel-item"> <span style="');
       html.push(transform + ": rotate(" + i * turnNum + 'turn)">');
       if (opts.mode == "both") {
-        html.push("<p id='curve'>" + prizeList[i].text + "</p>");
-        html.push('<img src="' + prizeList[i].img + '" />');
+        html.push("<p id='curve' class='line-clamp-2'>" + prizeList[i].text + "</p>");
+        html.push('<img class="uk-responsive-height uk-responsive-width" src="' + prizeList[i].img + '" />');
       } else if (prizeList[i].img) {
-        html.push('<img src="' + prizeList[i].img + '" />');
+        html.push('<img class="uk-responsive-height uk-responsive-width" src="' + prizeList[i].img + '" />');
       } else {
         html.push('<p id="curve">' + prizeList[i].text + "</p>");
       }

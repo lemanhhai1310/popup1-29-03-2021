@@ -1,16 +1,19 @@
 <!-- This is the modal with the outside close button -->
 <div id="modal-close-outside-popup1" class="modal uk-flex-top" uk-modal>
     <div class="modal__dialog uk-modal-dialog uk-margin-auto-vertical uk-modal-body uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/bg.png" uk-img>
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
-        <div class="uk-flex-bottom" uk-grid>
+        <button class="uk-modal-close-outside modal__close uk-icon uk-close" type="button">
+            <img src="images/popup-off.png" alt="">
+        </button>
+        <div class="uk-flex-top" uk-grid>
             <div class="uk-width-expand">
                 <div class="mb-25 mb-48-m"><a href=""><img src="images/logo1.png" alt=""></a></div>
-                <div class="mb-25 mb-44-m">
-                    <div class="modal__title3">
+                <div class="mb-25 mb-44-m uk-text-center">
+                    <img src="images/ig1.png" alt="">
+                    <div class="modal__title3 uk-hidden">
                         <div>VÒNG QUAY</div>
                         <div>MAY MẮN</div>
                     </div>
-                    <div class="uk-child-width-auto uk-flex-center uk-text-center" uk-grid>
+                    <div class="uk-child-width-auto uk-flex-center uk-text-center uk-hidden" uk-grid>
                         <div>
                             <div class="modal__title2">Quay liền tay <br>
                                 nhận quà ngay</div>
@@ -26,15 +29,24 @@
                 </ul>
                 <button type="button" class="modal__btnStart uk-border-rounded uk-button uk-button-secondary">bắt đầu chơi</button>
             </div>
-            <div class="uk-width-auto">
-                <section id="luckywheel" class="hc-luckywheel">
-                    <div class="hc-luckywheel-container">
-                        <canvas class="hc-luckywheel-canvas" width="500" height="500">Vòng Xoay May Mắn</canvas>
-                    </div>
-                    <a class="hc-luckywheel-btn uk-position-center" style="left: 50%;top: 50%" href="javascript:;">
-                        <img class="uk-position-bottom-center" src="images/kim.png" alt="">
-                    </a>
-                </section>
+            <div class="uk-width-auto@m">
+                <div class="uk-text-center">
+                    <img class="modal__img1 uk-width-3-5" src="images/quaylatrung.png" alt="">
+                </div>
+                <div class="uk-text-center modal__box1 uk-position-relative uk-position-z-index uk-flex uk-flex-middle uk-flex-center uk-background-contain" data-src="images/bg2.png" uk-img>
+                    <section id="luckywheel" class="hc-luckywheel uk-display-inline-block uk-position-relative">
+                        <?php $v1 = '500'; ?>
+                        <div class="hc-luckywheel-container">
+                            <canvas class="hc-luckywheel-canvas" width="<?= $v1 ?>" height="<?= $v1 ?>">Vòng Xoay May Mắn</canvas>
+                        </div>
+                        <a class="hc-luckywheel-btn uk-position-center" style="left: 50%;top: 50%" href="javascript:;">
+                            <img class="uk-position-bottom-center" src="images/kim.png" alt="">
+                        </a>
+                    </section>
+                </div>
+                <div class="uk-text-center">
+                    <img class="modal__img2 uk-width-1-3" src="images/chanmanhinh.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -100,20 +112,27 @@
                         Swal.fire(
                             'Chương trình kết thúc',
                             'Đã hết phần thưởng',
-                            'error'
+                            'error',
                         )
                     } else if (data == 'Chúc bạn may mắn lần sau'){
                         Swal.fire(
                             'Bạn không trúng thưởng',
                             data,
-                            'error'
+                            'error',
                         )
                     } else{
-                        Swal.fire(
-                            'Đã trúng giải',
-                            data,
-                            'success'
-                        )
+                        // Swal.fire(
+                        //     'Đã trúng giải',
+                        //     data,
+                        //     'success',
+                        // )
+                        console.log(data);
+                        Swal.fire({
+                            title: 'Đã trúng giải',
+                            text: data,
+                            // imageUrl: data,
+                            icon: 'success',
+                        })
                     }
                 }
             });
