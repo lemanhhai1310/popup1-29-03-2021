@@ -34,7 +34,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 
 //Recipients
-$mail->setFrom('no-replay@email.com', 'Kỳ thi đánh giá CNTT 2021');
+$mail->setFrom('no-replay@email.com', 'Vòng quay may mắn');
 $mail->addAddress('aptech1@aprotrain.com', 'Aptech');  //add to email
 $mail->addAddress('hai.lemanh.1310@gmail.com', 'Hai LE Manh');               //Name is optional
 $mail->addReplyTo('receive@gmail.com', 'saiarlen');  //add replay to email
