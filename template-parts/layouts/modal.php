@@ -31,9 +31,7 @@
             </div>
             <div class="uk-width-auto@m">
                 <div class="uk-position-relative" uk-toggle="cls: modal__box3; mode: media; media: @m">
-                    <div class="uk-visible@m">
-                        <?php require "template-parts/layouts/form.php"; ?>
-                    </div>
+                    <?php require "template-parts/layouts/form.php"; ?>
                     <div class="uk-text-center">
                         <img class="modal__img1 uk-width-3-5" src="images/quaylatrung.png" alt="">
                     </div>

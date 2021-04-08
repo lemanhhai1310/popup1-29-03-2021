@@ -1,4 +1,4 @@
-<div uk-toggle="cls: uk-position-cover; mode: media; media: @m" class="modal__box4 uk-flex uk-flex-middle uk-overlay-default" style="z-index: 19">
+<div class="modal__box4 uk-position-cover uk-flex uk-flex-middle uk-overlay-default" style="z-index: 19">
     <form class="uk-width-1-1" id="contact_form" name='registration'>
         <fieldset class="uk-fieldset">
 
