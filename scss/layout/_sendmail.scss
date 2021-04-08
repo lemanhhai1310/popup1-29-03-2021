@@ -1,0 +1,25 @@
+#loader {
+  display: none;
+  width: 105px;
+  height: 20px;
+  padding: 5px 0 10px 0;
+  background: url(mail/loading.gif) no-repeat center center;
+}
+#res{
+  @extend .fz-16;
+}
+#particles-js{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 0 0;
+  opacity: .5;
+  pointer-events: none;
+  z-index: 0;
+}
+.error{
+  color: red;
+  @extend .fz-16;
+}

@@ -30,6 +30,13 @@
     color: #000;
     background: #fec31d;
     font-family: $font-ArialBold;
+    &--click{
+
+    }
+    &--submit{
+      background: #164589;
+      color: #fff;
+    }
   }
   &__list{
     margin-bottom: 26px !important;
@@ -75,6 +82,36 @@
     transform: translate(50%,-50%);
     img{
       @include fluidx(39px,20px,width);
+    }
+  }
+  &__box3{
+    padding: 30px;
+    margin: -30px;
+    margin-bottom: -30px !important;
+    margin-left: 0;
+
+  }
+  &__box4{
+    padding: 20px;
+    @include media-breakpoint-up('m'){
+      padding: 60px;
+    }
+    &__legend{
+      @extend .fz-29;
+      font-family: $font-SVNGilroy-Bold;
+      color: #164589;
+      text-align: center;
+    }
+    &__input{
+      @extend .fz-16;
+      font-family: $font-SVNGilroy-Bold;
+      color: #1d262d;
+      border-color: #164589;
+      border-radius: 4px;
+      height: 42px;
+      &::placeholder{
+        color: #1d262d;
+      }
     }
   }
 }

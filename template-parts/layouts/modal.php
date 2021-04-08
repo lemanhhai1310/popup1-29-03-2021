@@ -27,25 +27,30 @@
                     <li>Cứ quay là sẽ có quà</li>
                     <li>Thời gian tham gia từ 15/3 – 30/4/2021</li>
                 </ul>
-                <button type="button" class="modal__btnStart uk-border-rounded uk-button uk-button-secondary">bắt đầu chơi</button>
+                <button type="button" class="modal__btnStart modal__btnStart--click uk-border-rounded uk-button uk-button-secondary">bắt đầu chơi</button>
             </div>
             <div class="uk-width-auto@m">
-                <div class="uk-text-center">
-                    <img class="modal__img1 uk-width-3-5" src="images/quaylatrung.png" alt="">
-                </div>
-                <div class="uk-text-center modal__box1 uk-position-relative uk-position-z-index uk-flex uk-flex-middle uk-flex-center uk-background-contain" data-src="images/bg2.png" uk-img>
-                    <section id="luckywheel" class="hc-luckywheel uk-display-inline-block uk-position-relative">
-                        <?php $v1 = '500'; ?>
-                        <div class="hc-luckywheel-container">
-                            <canvas class="hc-luckywheel-canvas" width="<?= $v1 ?>" height="<?= $v1 ?>">Vòng Xoay May Mắn</canvas>
-                        </div>
-                        <a class="hc-luckywheel-btn uk-position-center" style="left: 50%;top: 50%" href="javascript:;">
-                            <img class="uk-position-bottom-center" src="images/kim.png" alt="">
-                        </a>
-                    </section>
-                </div>
-                <div class="uk-text-center">
-                    <img class="modal__img2 uk-width-1-3" src="images/chanmanhinh.png" alt="">
+                <div class="uk-position-relative" uk-toggle="cls: modal__box3; mode: media; media: @m">
+                    <div class="uk-visible@m">
+                        <?php require "template-parts/layouts/form.php"; ?>
+                    </div>
+                    <div class="uk-text-center">
+                        <img class="modal__img1 uk-width-3-5" src="images/quaylatrung.png" alt="">
+                    </div>
+                    <div class="uk-text-center modal__box1 uk-position-relative uk-position-z-index uk-flex uk-flex-middle uk-flex-center uk-background-contain" data-src="images/bg2.png" uk-img>
+                        <section id="luckywheel" class="hc-luckywheel uk-display-inline-block uk-position-relative">
+                            <?php $v1 = '500'; ?>
+                            <div class="hc-luckywheel-container">
+                                <canvas class="hc-luckywheel-canvas" width="<?= $v1 ?>" height="<?= $v1 ?>">Vòng Xoay May Mắn</canvas>
+                            </div>
+                            <a class="hc-luckywheel-btn uk-position-center" style="left: 50%;top: 50%" href="javascript:;">
+                                <img class="uk-position-bottom-center" src="images/kim.png" alt="">
+                            </a>
+                        </section>
+                    </div>
+                    <div class="uk-text-center">
+                        <img class="modal__img2 uk-width-1-3" src="images/chanmanhinh.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
