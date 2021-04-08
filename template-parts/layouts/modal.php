@@ -25,7 +25,7 @@
                     <li>Mỗi người chơi sẽ có 1 lượt quay</li>
                     <li>Người chơi điền đẩy đủ thông tin bao gồm Họ tên, sđt, email để bắt đầu</li>
                     <li>Cứ quay là sẽ có quà</li>
-                    <li>Thời gian tham gia từ 15/3 – 30/4/2021</li>
+                    <li hidden>Thời gian tham gia từ 15/3 – 30/4/2021</li>
                 </ul>
                 <button type="button" class="modal__btnStart modal__btnStart--click uk-border-rounded uk-button uk-button-secondary">bắt đầu chơi</button>
             </div>
