@@ -13,7 +13,7 @@
             <div class="uk-margin">
                 <input name="femail" id="femail" class="uk-input modal__box4__input" type="email" placeholder="Email">
             </div>
-            <div class="uk-margin">
+            <div class="uk-margin uk-hidden">
                 <input name="fngaysinh" id="fngaysinh" class="uk-input modal__box4__input" type="text" placeholder="Bạn đang là">
             </div>
             <div class="uk-text-center">

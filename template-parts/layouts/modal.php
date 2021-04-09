@@ -55,8 +55,13 @@
     </div>
 </div>
 
+<a href="#modal-close-outside-popup1" uk-toggle class="uk-position-bottom-left uk-position-fixed"><img src="images/icon.png" alt=""></a>
+
 <script>
-    UIkit.modal('#modal-close-outside-popup1').show();
+    setTimeout(function(){
+        console.log("Sup!");
+        UIkit.modal('#modal-close-outside-popup1').show();
+    }, 6000);//wait 6 seconds
 </script>
 
 <script>
